@@ -1,3 +1,4 @@
+html, body, #container { height: 85%; }
 body {
   margin: 0;
   padding: 0;
@@ -5,15 +6,17 @@ body {
   color: #eaeaea;
   font: 16px;
   line-height: 1.5;
-  font-family: Monaco, "Bitstream Vera Sans Mono", "Lucida Console", Terminal, monospace;
+  font-family: Monaco, "Bitstream Vera Sans Mono", "Lucida Console", Terminal, monospace;  
 }
 
 /* General & 'Reset' Stuff */
 
 .container {
   width: 90%;
-  max-width: 1000px;
+  max-width: 1500px;
   margin: 0 auto;
+  height: auto; 
+  min-height: 100%; 
 }
 
 section {
@@ -86,6 +89,17 @@ section img {
   max-width: 100%
 }
 
+
+#project {
+    background: #F52887;   
+    width: 90%;
+      max-width: 1000px;
+      margin: 0 auto;
+      height: auto; 
+    border-radius: 10px;
+    padding: 20px; 
+}
+
 h1, h2, h3, h4, h5, h6 {
   font-weight: normal;
   font-family: Monaco, "Bitstream Vera Sans Mono", "Lucida Console", Terminal, monospace;
@@ -96,33 +110,44 @@ h1, h2, h3, h4, h5, h6 {
                0 0 10px rgba(181, 232, 83, 0.1);
 }
 
+
 #main_content h1 {
   font-size: 30px;
+  color: #F52887;
 }
 
 #main_content h2 {
   font-size: 24px;
+    color: #F52887;
 }
 
 #main_content h3 {
   font-size: 18px;
+ color: #F52887;    
 }
 
 #main_content h4 {
   font-size: 14px;
+    color: #F52887;
 }
 
 #main_content h5 {
   font-size: 12px;
   text-transform: uppercase;
   margin: 0 0 5px 0;
+    color: #F52887;
 }
 
 #main_content h6 {
   font-size: 12px;
   text-transform: uppercase;
-  color: #999;
+  color: #F52887;
   margin: 0 0 5px 0;
+}
+
+
+#project h1, h2, h3, h4, h5, h6 {
+    color: black;    
 }
 
 dt {
@@ -239,6 +264,31 @@ hr {
   background: url("../images/linkedin.png") 0 0 no-repeat; 
 }
 
+.btn-gitview .icon {
+  opacity: 0.6;
+  background: url("../images/github.png") 0 0 no-repeat; 
+}
+
+.btn-gitwatch .icon {
+  opacity: 0.6;
+  background: url("../images/watch.png") 0 0 no-repeat; 
+}
+
+.btn-gitstar .icon {
+  opacity: 0.6;
+  background: url("../images/star.png") 0 0 no-repeat; 
+}
+
+.btn-gitfork .icon {
+  opacity: 0.6;
+  background: url("../images/fork.png") 0 0 no-repeat; 
+}
+
+.btn-gitzip .icon {
+  opacity: 0.6;
+  background: url("../images/download.png") 0 0 no-repeat; 
+}
+
 /* Links
    a, a:hover, a:visited
 */
@@ -262,3 +312,13 @@ a {
 .cf {
   zoom:1;
 }
+
+.footer { 
+ clear: both;
+ position: relative;
+ z-index: 10;    
+ height: 3em;
+ margin-top: -3em;
+ text-align: center    
+}
+
