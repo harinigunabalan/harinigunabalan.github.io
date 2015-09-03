@@ -60,11 +60,11 @@ header h1 {
   -webkit-font-smoothing: antialiased;
 }
 
-header h1:before {
+/* header h1:before {
   content: "./ ";
   font-size: 24px;
      color: #F52887;
-}
+} */
 
 header h2 {
   font-size: 18px;
@@ -76,6 +76,7 @@ header h2 {
   display: inline-block;
   text-align: center;
   margin: 0;
+      
 }
 
 /* Main Content
@@ -93,7 +94,7 @@ section img {
 #project {
     background: #F52887;   
     width: 90%;
-      max-width: 1000px;
+      max-width: 1600px;
       margin: 0 auto;
       height: auto; 
     border-radius: 10px;
@@ -233,7 +234,8 @@ hr {
 }
 
 .btn:hover {
-  background: -webkit-linear-gradient(top, rgba(40, 40, 40, 0.6), rgba(35, 35, 35, 0.6) 50%, rgba(10, 10, 10, 0.8) 50%, rgba(0, 0, 0, 0.8));
+ /* background: -webkit-linear-gradient(top, rgba(40, 40, 40, 0.6), rgba(35, 35, 35, 0.6) 50%, rgba(10, 10, 10, 0.8) 50%, rgba(0, 0, 0, 0.8)); */
+    transition: background-size 2s, transform 1s;
 }
 
 .btn .icon {
@@ -320,5 +322,22 @@ a {
  height: 3em;
  margin-top: -3em;
  text-align: center    
+}
+
+.hvr-float {
+  display: inline-block;
+  vertical-align: middle;
+  transform: translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  backface-visibility: hidden;
+  -moz-osx-font-smoothing: grayscale;
+  transition-duration: 0.3s;
+  transition-property: transform;
+  transition-timing-function: ease-out;
+}
+.hvr-float:hover,
+.hvr-float:focus,
+.hvr-float:active {
+  transform: translateY(-8px);
 }
 
