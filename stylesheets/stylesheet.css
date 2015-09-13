@@ -201,6 +201,26 @@ hr {
 /* Buttons
 */
 
+#wrap{
+    width:100%;
+    margin:0 auto;
+}
+
+#box1{
+    float:left;
+    width:62%;
+    padding: 10px;
+    
+    margin:0 auto;
+}
+
+#box2{  
+    width: 30%;
+    float: right;
+  
+    padding: 10px;
+}
+
 .btn {
     display: inline-block;
     /*background: -webkit-linear-gradient(top, rgba(40, 40, 40, 0.3), rgba(35, 35, 35, 0.3) 50%, rgba(10, 10, 10, 0.3) 50%, rgba(0, 0, 0, 0.3));*/
