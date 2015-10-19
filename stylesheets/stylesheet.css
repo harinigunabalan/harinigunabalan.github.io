@@ -154,10 +154,10 @@ ul li {
     list-style: none;
 }
 ul li:before {
-    content: ">>";
+    content: "=>";
     font-family: Monaco, "Bitstream Vera Sans Mono", "Lucida Console", Terminal, monospace;
     font-size: 13px;
-    color: #b5e853;
+    
     margin-left: -37px;
     margin-right: 21px;
     line-height: 16px;
@@ -257,6 +257,18 @@ hr {
     opacity: 0.6;
     background: url("../images/project.png") 0 0 no-repeat;
 }
+.btn-education .icon {
+    opacity: 0.6;
+    background: url("../images/education.png") 0 0 no-repeat;
+}
+.btn-work .icon {
+    opacity: 0.6;
+    background: url("../images/java.png") 0 0 no-repeat;
+}
+.btn-skills .icon {
+    opacity: 0.6;
+    background: url("../images/project.png") 0 0 no-repeat;
+}
 .btn-twitter .icon {
     opacity: 0.6;
     background: url("../images/twitter.png") 0 0 no-repeat;
@@ -337,4 +349,19 @@ footer {
 .hvr-float:focus,
 .hvr-float:active {
     transform: translateY(-8px);
+}
+.educontainer {
+    width: 90%;
+    max-width: 1000px;
+    margin: 0 auto;
+    height: auto;
+}
+#education {
+    background: #F52887;
+    width: 90%;
+    max-width: 1000px;
+    margin: 0 auto;
+    height: auto;
+    border-radius: 10px;
+    padding: 20px;
 }
