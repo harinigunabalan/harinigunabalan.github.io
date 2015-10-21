@@ -265,9 +265,13 @@ hr {
     opacity: 0.6;
     background: url("../images/java.png") 0 0 no-repeat;
 }
-.btn-skills .icon {
+.btn-skill .icon {
     opacity: 0.6;
-    background: url("../images/project.png") 0 0 no-repeat;
+    background: url("../images/skill.jpg") 0 0 no-repeat;
+}
+.btn-award .icon {
+    opacity: 0.6;
+    background: url("../images/award.png") 0 0 no-repeat;
 }
 .btn-twitter .icon {
     opacity: 0.6;
