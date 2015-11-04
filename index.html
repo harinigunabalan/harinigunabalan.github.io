@@ -32,6 +32,75 @@
         ga('send', 'pageview');
     </script>
 
+        <!-- Get jQuery -->
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script src="js/typed.js" type="text/javascript"></script>
+    <script>
+    $(function(){
+
+        $("#typed").typed({
+             strings: ["harini@ubuntu-VirtualBox:~/Documents$ javac HariniGunabalan.java <br> harini@ubuntu-VirtualBox:~/Documents$ java HariniGunabalan <br> Hello, World!! I am Harini! Welcome to my page! Just hold on and look around to know more about me. "],
+            // stringsElement: $('#typed-strings'),
+            typeSpeed: 30,
+            backDelay: 500,
+            loop: false,
+            contentType: 'html', // or text
+            // defaults to false for infinite loop
+            loopCount: false,
+            callback: function(){ foo(); },
+            resetCallback: function() { newTyped(); }
+        });
+
+        $(".reset").click(function(){
+            $("#typed").typed('reset');
+        });
+
+    });
+
+    function newTyped(){ /* A new typed object */ }
+
+    function foo(){ console.log("Callback"); }
+
+    </script>
+    
+    <style>
+        /* code for animated blinking cursor */
+        .typed-cursor{
+            opacity: 1;
+            font-weight: 100;
+            -webkit-animation: blink 0.7s infinite;
+            -moz-animation: blink 0.7s infinite;
+            -ms-animation: blink 0.7s infinite;
+            -o-animation: blink 0.7s infinite;
+            animation: blink 0.7s infinite;
+        }
+        @-keyframes blink{
+            0% { opacity:1; }
+            50% { opacity:0; }
+            100% { opacity:1; }
+        }
+        @-webkit-keyframes blink{
+            0% { opacity:1; }
+            50% { opacity:0; }
+            100% { opacity:1; }
+        }
+        @-moz-keyframes blink{
+            0% { opacity:1; }
+            50% { opacity:0; }
+            100% { opacity:1; }
+        }
+        @-ms-keyframes blink{
+            0% { opacity:1; }
+            50% { opacity:0; }
+            100% { opacity:1; }
+        }
+        @-o-keyframes blink{
+            0% { opacity:1; }
+            50% { opacity:0; }
+            100% { opacity:1; }
+        }
+    </style>
+    
     <title>Harini Gunabalan</title>
 </head>
 
@@ -48,6 +117,7 @@
             <a href="./views/work.html" class="btn1 btn-work hvr-float"><span class="icon"></span> Work </a>
             <a href="./views/skills.html" class="btn1 btn-skill hvr-float"><span class="icon"></span> Skills </a>
             <a href="./views/achievements.html" class="btn1 btn-award hvr-float"><span class="icon"></span> Achievements </a>
+            <a href="./views/projects.html" class="btn1 btn-project hvr-float"><span class="icon"></span> Projects </a>    
             
            
         </section>
@@ -57,12 +127,20 @@
 
     <div class="container">
         <section id="main_content">
+          
+            <section id="terminal">
+            <h3>   
+            <div id="typed">              
+                </div> </h3> </section>
+             <hr>
+            
             <div id="wrap">
                 <div id="box1">
-                    <p  style="color: #b5e853;" class="animate"  > harini@ubuntu:~$ echo Hello, World! </p>
+                    <h1>  <b>About Me</b> </h1> 
+        <!--            <p  style="color: #b5e853;" class="animate"  > harini@ubuntu:~$ echo Hello, World! </p>
                     <h1>
                     <a id="harini-gunabalan" class="anchor" href="#harini-gunabalan" aria-hidden="true"><span class="octicon octicon-link"></span></a> <a class="animate"> Hello, World! </a>
-                </h1>
+                </h1>-->
 
                     <div id="harini-gunabalan" style="float:left; clear: none; height:378; width:384; margin: 0 10px 10px 0;">
 
@@ -78,7 +156,7 @@ I enjoy Travelling and exploring new places, Hiking, Zumba, Yoga and History.
                 </div>
                 
                 <div id="box2">
-                    <div id="my_tweet" >
+                    <div id="my_tweet" >  <br>
                         <h1>  <b>My Tweets</b> </h1> 
                         <a class="twitter-timeline"  href="https://twitter.com/harinigunabalan" data-widget-id="643016889472548864"
                            height = "325">Tweets by @harinigunabalan</a>
@@ -99,18 +177,6 @@ I enjoy Travelling and exploring new places, Hiking, Zumba, Yoga and History.
                 </div>
             </div>
            
-        </section>
-
-
-        
-         <hr>
-
-        <section  >
-
-            <a name= "Projects" class="animate"> <h1> &lt/&gt Projects </h1> </a>
-            <a href="./views/labproject.html" class=" btn1 btn-project hvr-float"><span class="icon"></span>Masters Lab Project</a>
-            <a href="./views/courseproject.html" class=" btn1 btn-project hvr-float"><span class="icon"></span>Masters coursework Projects</a>
-            <a href="./views/hackproject.html" class="btn1 btn-project hvr-float"><span class="icon"></span>Hackathon Projects</a>
         </section>
 
 

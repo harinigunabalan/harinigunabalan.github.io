@@ -409,3 +409,29 @@ footer hr  {
     animation-name: example;
     animation-duration: 1s;  
 }
+.wrap{
+	max-width: 600px;
+	margin:150px auto;
+}
+
+.type-wrap{
+	margin:10px auto;
+	padding:20px;
+	background:#f0f0f0;
+	border-radius:5px;
+	border:#CCC 1px solid;
+}
+#terminal {
+    background: #4C1F36;
+    width: 90%;
+    max-width: 1600px;
+    margin: 0 auto;
+    height: auto;
+    border-radius: 10px;
+    padding: 20px;
+}
+#terminal h3 {
+    color: #F4C2C2;
+    text-align: justify;
+    font-family: Ubuntu
+}
