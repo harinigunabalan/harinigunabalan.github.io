@@ -421,6 +421,20 @@ footer hr  {
 	border-radius:5px;
 	border:#CCC 1px solid;
 }
+
+.container2 {
+	width:100%;
+	height:auto;
+}
+
+.imageleft{
+ margin-left:2%;
+float:left; 
+height:300px;
+width:400px;
+padding:2%;
+} 
+
 #terminal {
     background: #4C1F36;
     width: 90%;
