@@ -447,5 +447,6 @@ padding:2%;
 #terminal h3 {
     color: #F4C2C2;
     text-align: justify;
-    font-family: Ubuntu
+    font-family: Monaco;
+    font-size: 12pt;
 }
