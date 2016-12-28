@@ -210,14 +210,12 @@ hr {
     float:left;
     width:62%;
     padding: 10px;
-    
     margin:0 auto;
 }
 
 #box2{  
     width: 30%;
-    float: right;
-  
+    float: left;
     padding: 10px;
 }
 
