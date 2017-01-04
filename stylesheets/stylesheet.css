@@ -5,12 +5,12 @@ body,
 }
 body {
     margin: 0;
-    padding: 0;
+    padding: 0 !important;
     background: #151515 url("../images/bkg.png") 0 0;
-    color: #eaeaea;
-    font: 16px;
-    line-height: 1.5;
-    font-family: Monaco, "Bitstream Vera Sans Mono", "Lucida Console", Terminal, monospace;
+    color: #eaeaea !important;
+    font: 16px !important;
+    line-height: 1.5 !important;
+    font-family: Monaco, "Bitstream Vera Sans Mono", "Lucida Console", Terminal, monospace !important;
 }
 /* General & 'Reset' Stuff */
 
@@ -35,7 +35,7 @@ h6 {
     margin: 0 0 20px;
 }
 li {
-    line-height: 1.4;
+    line-height: 1.6;
 }
 /* Header, <header>
    header   - container
@@ -55,7 +55,7 @@ header h1 {
     line-height: 1.5;
     margin: 0 0 0 -40px;
     font-weight: bold;
-    font-family: Monaco, "Bitstream Vera Sans Mono", "Lucida Console", Terminal, monospace;
+    font-family: Monaco, "Bitstream Vera Sans Mono", "Lucida Console", Terminal, monospace  !important;
     color: #F52887;
     text-shadow: 0 1px 1px rgba(0, 0, 0, 0.1), 0 0 5px rgba(181, 232, 83, 0.1), 0 0 10px rgba(181, 232, 83, 0.1);
     letter-spacing: -1px;
@@ -81,7 +81,6 @@ header h2 {
 */
 
 #main_content {
-    width: 100%;
     -webkit-font-smoothing: antialiased;
 }
 section img {
@@ -120,14 +119,13 @@ h6 {
     font-size: 18px;
     text-align: justify;
     color: #F52887;
+    line-height: 1.5;
 }
 #main_content h4 {
     font-size: 14px;
     color: #F52887;
 }
 #main_content h5 {
-    font-size: 12px;
-    text-transform: uppercase;
     margin: 0 0 5px 0;
     color: #F52887;
 }
@@ -196,8 +194,8 @@ hr {
     height: 0;
     border: 0;
     border-bottom: 1px dashed #b5e853;
-    color: #b5e853;
-}
+    color: #b5e853; !important 
+} 
 /* Buttons
 */
 
@@ -357,6 +355,7 @@ footer {
     max-width: 1000px;
     margin: 0 auto;
     height: auto;
+    color: #2A282A;
 }
 #education {
     background: #F52887;
@@ -366,6 +365,8 @@ footer {
     height: auto;
     border-radius: 10px;
     padding: 20px;
+    color: #2A282A;
+    line-height: 1.7;
 }
 #education h3,
 h2,
@@ -375,6 +376,7 @@ h5,
 h6 {
     color: black;
     text-align: justify;
+    line-height: 2;
 }
 footer hr  {
     height: 0;
@@ -383,12 +385,13 @@ footer hr  {
     color: #b5e853;
 }
 #project h3{
-    color: black;
+    color: #2A282A;
     text-align: justify;
 }
 #project h5{
-    color: black;
+    color: #2A282A;
     text-align: justify;
+    font-family: Monaco, "Bitstream Vera Sans Mono", "Lucida Console", Terminal, monospace;
 }
 @keyframes example {
     0%   {font-size: +1%;}
@@ -435,7 +438,6 @@ padding:2%;
 
 #terminal {
     background: #4C1F36;
-    width: 90%;
     max-width: 1600px;
     margin: 0 auto;
     height: auto;
