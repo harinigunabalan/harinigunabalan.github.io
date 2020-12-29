@@ -46,7 +46,7 @@ li {
 header {
     background: rgba(0, 0, 0, 0.1);
     width: 100%;
-    border-bottom: 1px dashed #b5e853;
+    border-bottom: 1px dashed #efbd9d;
     padding: 20px 0;
     margin: 0 0 40px 0;
 }
@@ -56,16 +56,11 @@ header h1 {
     margin: 0 0 0 -40px;
     font-weight: bold;
     font-family: Monaco, "Bitstream Vera Sans Mono", "Lucida Console", Terminal, monospace  !important;
-    color: #F52887;
+    color: #efbd9d;
     text-shadow: 0 1px 1px rgba(0, 0, 0, 0.1), 0 0 5px rgba(181, 232, 83, 0.1), 0 0 10px rgba(181, 232, 83, 0.1);
     letter-spacing: -1px;
     -webkit-font-smoothing: antialiased;
 }
-/* header h1:before {
-  content: "./ ";
-  font-size: 24px;
-     color: #F52887;
-} */
 
 header h2 {
     font-size: 18px;
@@ -87,7 +82,7 @@ section img {
     max-width: 100%
 }
 #project {
-    background: #F52887;
+    background: #efbd9d;
     width: 90%;
     max-width: 1600px;
     margin: 0 auto;
@@ -113,36 +108,36 @@ h5,
 h6 {
     font-weight: normal;
     font-family: Monaco, "Bitstream Vera Sans Mono", "Lucida Console", Terminal, monospace;
-    color: #F52887;
+    color: #efbd9d;
     letter-spacing: -0.03em;
     text-shadow: 0 1px 1px rgba(0, 0, 0, 0.1), 0 0 5px rgba(181, 232, 83, 0.1), 0 0 10px rgba(181, 232, 83, 0.1);
 }
 #main_content h1 {
     font-size: 30px;
-    color: #F52887;
+    color: #efbd9d;
 }
 #main_content h2 {
     font-size: 24px;
-    color: #F52887;
+    color: #efbd9d;
 }
 #main_content h3 {
     font-size: 18px;
     text-align: justify;
-    color: #F52887;
+    color: #efbd9d;
     line-height: 1.5;
 }
 #main_content h4 {
     font-size: 14px;
-    color: #F52887;
+    color: #efbd9d;
 }
 #main_content h5 {
     margin: 0 0 5px 0;
-    color: #F52887;
+    color: #efbd9d;
 }
 #main_content h6 {
     font-size: 12px;
     text-transform: uppercase;
-    color: #F52887;
+    color: #efbd9d;
     margin: 0 0 5px 0;
 }
 #project h1,
@@ -230,7 +225,7 @@ hr {
 .btn1 {
     display: inline-block;
     /*background: -webkit-linear-gradient(top, rgba(40, 40, 40, 0.3), rgba(35, 35, 35, 0.3) 50%, rgba(10, 10, 10, 0.3) 50%, rgba(0, 0, 0, 0.3));*/
-    background: #F52887;
+    background: #efbd9d;
     padding: 8px 18px;
     border-radius: 50px;
     border: 2px solid rgba(0, 0, 0, 0.7);
@@ -244,6 +239,11 @@ hr {
     text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.75);
     box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.05);
 }
+
+.btn-home {
+    font-size: 17px;
+}
+
 .btn1:hover {
     /* background: -webkit-linear-gradient(top, rgba(40, 40, 40, 0.6), rgba(35, 35, 35, 0.6) 50%, rgba(10, 10, 10, 0.8) 50%, rgba(0, 0, 0, 0.8)); */
     transition: background-size 2s, transform 1s;
@@ -254,6 +254,11 @@ hr {
     height: 16px;
     margin: 1px 8px 0 0;
     float: left;
+}
+
+.btn-instagram .icon {
+    opacity: 0.6;
+    background: url("../images/instagram.png") 0 0 no-repeat;
 }
 .btn-github .icon {
     opacity: 0.6;
@@ -341,7 +346,7 @@ footer {
     bottom: 0;
     font-family: Monaco, "Bitstream Vera Sans Mono", "Lucida Console", Terminal, monospace;
     font-size: 12px;
-    color: #b5e853;
+    color: #efbd9d;
     padding: 0;
 }
 .hvr-float {
@@ -368,7 +373,7 @@ footer {
     color: #2A282A;
 }
 #education {
-    background: #F52887;
+    background: #efbd9d;
     width: 90%;
     max-width: 1000px;
     margin: 0 auto;
@@ -391,8 +396,8 @@ h6 {
 footer hr  {
     height: 0;
     border: 0;
-    border-bottom: 1px dashed #b5e853;
-    color: #b5e853;
+    border-bottom: 1px dashed #efbd9d;
+    color: #efbd9d;
 }
 #project h3{
     color: #2A282A;
@@ -460,4 +465,89 @@ padding:2%;
     text-align: justify;
     font-family: Monaco;
     font-size: 12pt;
+}
+
+.btn-social
+{
+    border-radius: 50%;
+    color: #ffffff !important;
+    display: inline-block;
+    height: 54px;
+    line-height: 54px;
+    margin: 8px 4px;
+    text-align: center;
+    text-decoration: none;
+    transition: background-color .3s;
+    webkit-transition: background-color .3s;
+    width: 54px;
+}
+
+.btn-social .fa,.btn-social i
+{
+    backface-visibility: hidden;
+    moz-backface-visibility: hidden;
+    ms-transform: scale(1);
+    o-transform: scale(1);
+    transform: scale(1);
+    transition: all .25s;
+    webkit-backface-visibility: hidden;
+    webkit-transform: scale(1);
+    webkit-transition: all .25s;
+}
+.btn-social:hover,.btn-social:focus
+{
+    color: #fff;
+    outline: none;
+    text-decoration: none;
+}
+.btn-social:hover .fa,.btn-social:focus .fa,.btn-social:hover i,.btn-social:focus i
+{
+    ms-transform: scale(1.3);
+    o-transform: scale(1.3);
+    transform: scale(1.3);
+    webkit-transform: scale(1.3);
+}
+.btn-social.btn-xs
+{
+    font-size: 9px;
+    height: 24px;
+    line-height: 13px;
+    margin: 6px 2px;
+    width: 24px;
+}
+.btn-social.btn-sm
+{
+    font-size: 13px;
+    height: 36px;
+    line-height: 18px;
+    margin: 6px 2px;
+    width: 36px;
+}
+.btn-social.btn-lg
+{
+    font-size: 22px;
+    height: 72px;
+    line-height: 40px;
+    margin: 10px 6px;
+    width: 72px;
+}
+
+.btn-github
+{
+    background-color: #f4cbb2;
+}
+
+.btn-instagram
+{
+    background-color: #dd2a7b;
+}
+
+.btn-linkedin
+{
+    background-color: #0e76a8;
+}
+
+.btn-twitter
+{
+    background-color: #00acee;
 }
